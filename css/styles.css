@@ -1,0 +1,19 @@
+background{
+    background-color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1px;
+}
+h1 , h2{
+    color: brown;
+}
+li{
+    font-style: normal;
+    color: black;
+}
+li:hover{
+    color:blueviolet
+}
+img,me1{
+width: 150px;
+height: 200px;
+}
