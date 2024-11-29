@@ -6,62 +6,83 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f7f7f7; /* Fondo general */
 }
 
 .card {
-    font-size: 24px; /* Puedes ajustar el tamaño del texto */
+    font-size: 16px; /* Ajuste del tamaño del texto */
     text-align: center;
-    padding: 50px;
-    margin: 90px;
-    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Transición al hacer hover */
 }
 
 .card img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: 150px; /* Establece una altura fija para las imágenes */
+    object-fit: contain; /* Asegura que la imagen se ajusta sin distorsionarse */
     display: block;
-    margin: 0 auto 20px; /* Centra la imagen horizontalmente y añade espacio debajo */
-    border-radius: 10px; /* Opcional: redondear bordes de la imagen */
-}
-h1{
-    color: red;
-}
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 10px;
-}
-.social-media a {
-    font-size: 1.5rem; /* Tamaño del ícono */
-    transition: color 0.3s; /* Transición suave para el cambio de color */
-}
-
-.social-media a:hover {
-    color: #007bff; /* Cambia el color cuando se pasa el cursor sobre el ícono */
-}
-
-.social-media i {
-    margin: 0 10px; /* Espacio entre los íconos */
-}
-.card-img-top {
-    height: 100px; /* Altura uniforme para todas las imágenes */
-    object-fit: contain; /* Asegura que la imagen se ajuste al espacio sin distorsionarse */
-    padding: 10px; /* Espacio interior para que las imágenes no toquen los bordes */
+    margin: 0 auto 15px; /* Centra la imagen y añade espacio debajo */
+    border-radius: 10px; /* Redondea las esquinas de las imágenes */
 }
 
 .card-title {
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #333; /* Color más suave para el título */
 }
 
-.card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+.card-body {
+    padding: 10px;
 }
 
+/* Estilo para las tarjetas con un efecto al hacer hover */
 .card:hover {
     transform: scale(1.05);
+}
+
+/* Ajustar la apariencia de las tarjetas en el grid */
+.card-columns {
+    column-count: 4; /* Ajusta el número de tarjetas por fila */
+    column-gap: 20px; /* Espaciado entre las columnas */
+}
+
+.card-columns .card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Títulos de las secciones */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-media a {
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.social-media a:hover {
+    color: #007bff; /* Cambia el color al pasar el cursor */
+}
+
+.social-media i {
+    margin: 0 10px; /* Espacio entre los íconos */
+}
+
+/* Estilo específico para los iconos */
+.social-media a {
+    color: white; /* Color de los íconos en estado normal */
+}
+
+.social-media i {
+    margin: 0 10px;
 }
